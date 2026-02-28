@@ -4,7 +4,7 @@
 import pygame
 from code.Level import Level
 from code.Const import WIN_WIDTH, WIN_HEIGHT, \
-    MENU_OPTION  # CASO NÃO QUEIRA INFORMAR DIMENSÕES POR UM ARQUIVO ESPECÍFICO APAGAR ESSA LINHA
+    MENU_OPTION
 from code.Menu import Menu
 
 

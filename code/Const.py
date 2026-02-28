@@ -3,6 +3,17 @@
 COLOR_BLACK= (0, 0, 0)
 COLOR_WHITE = (255, 255, 255)
 
+#E
+ENTITY_SPEED = {'nature_1_0': 0,
+                'nature_1_1': 0,
+                'nature_1_2': 1,
+                'nature_1_3': 2,
+                'nature_1_4': 3,
+                'nature_1_5': 5,
+                'nature_1_6': 5,
+                'nature_1_7': 4}
+
+
 #M
 
 #MENU_OPTION1 = 'NEW GAME'

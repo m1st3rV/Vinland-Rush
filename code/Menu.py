@@ -17,7 +17,7 @@ class Menu:
         self.menu_option = 0
 
     def run(self, ):
-        pygame.mixer_music.load('./asset/music/843679.wav')    #EDITE O CAMINHO PARA SELECIONAR O ARQUIVO DESEJADO
+        pygame.mixer_music.load('./asset/music/843679.wav')    #FILE PATH
         pygame.mixer_music.play(-1)
 
         while True:
