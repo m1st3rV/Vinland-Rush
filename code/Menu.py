@@ -12,7 +12,7 @@ from code.Const import WIN_WIDTH, WIN_HEIGHT,COLOR_BLACK, COLOR_WHITE, MENU_OPTI
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load(os.path.join('./asset/nature_2/orig.png'))
+        self.surf = pygame.image.load(os.path.join('./asset/nature_2/orig.png')).convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
         self.menu_option = 0
 
