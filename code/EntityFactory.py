@@ -1,7 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from code.Player import Player
+
 from code.Background import Background
-from code.Const import WIN_WIDTH
+from code.Const import WIN_WIDTH, WIN_HEIGHT
 
 
 class EntityFactory:
@@ -15,6 +17,10 @@ class EntityFactory:
                     list_bg.append(Background(f'nature_1_{i}', (0,0))) #FETCH FOR THE IMAGES WHICH NAME STARTS WITH NATURE_1
                     list_bg.append(Background(f'nature_1_{i}', (WIN_WIDTH, 0)))
                 return list_bg
+
+            case 'Player':
+                return Player('Player', (5, 240))
+
 #            case 'nature_2':
 #
 #            case 'nature_3':
