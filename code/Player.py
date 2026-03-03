@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import pygame
 
+from code.Const import ENTITY_SPEED, WIN_HEIGHT, WIN_WIDTH
 from code.Entity import Entity
 
 
@@ -13,4 +15,9 @@ class Player(Entity):
         pass
 
     def move(self, ):
+        pressed_keys = pygame.key.get_pressed()
+        if pressed_keys[pygame.K_LEFT] and self.rect.left > 0:
+            self.rect.centerx -= ENTITY_SPEED[self.name]
+        if pressed_keys[pygame.K_RIGHT] and self.rect.right < WIN_WIDTH:
+            self.rect.centerx += ENTITY_SPEED[self.name]
         pass

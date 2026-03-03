@@ -11,7 +11,8 @@ ENTITY_SPEED = {'nature_1_0': 0,
                 'nature_1_4': 3,
                 'nature_1_5': 5,
                 'nature_1_6': 5,
-                'nature_1_7': 4}
+                'nature_1_7': 4,
+                'Player': 3 }
 
 
 #M
