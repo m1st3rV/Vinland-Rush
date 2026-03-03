@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from code.Enemy import Enemy
 from code.Player import Player
 
 from code.Background import Background
@@ -20,19 +21,6 @@ class EntityFactory:
 
             case 'Player':
                 return Player('Player', (5, 240))
+            case 'Enemy1':
+                return Enemy('Enemy1', (WIN_WIDTH + 10, 240))
 
-#            case 'nature_2':
-#
-#            case 'nature_3':
-#
- #           case 'nature_4':
-#
- #           case 'nature_5':
-#
- #           case 'nature_6':
-#
- #           case 'nature_7':
-#
- #           case 'nature_8':
-#
-#            case 'players':

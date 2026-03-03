@@ -1,9 +1,11 @@
 #C
+import pygame
 
 COLOR_BLACK= (0, 0, 0)
 COLOR_WHITE = (255, 255, 255)
 
 #E
+EVENT_ENEMY = pygame.USEREVENT +1
 ENTITY_SPEED = {'nature_1_0': 0,
                 'nature_1_1': 0,
                 'nature_1_2': 1,
@@ -12,7 +14,10 @@ ENTITY_SPEED = {'nature_1_0': 0,
                 'nature_1_5': 5,
                 'nature_1_6': 5,
                 'nature_1_7': 4,
-                'Player': 3 }
+                'Player': 3,
+                'Enemy1': 2,
+                'Enemy2': 1}
+
 
 
 #M
@@ -23,7 +28,8 @@ ENTITY_SPEED = {'nature_1_0': 0,
 MENU_OPTION = ('NEW GAME','COMPETITIVE', 'COOPERATIVE', 'SCORE','EXIT')
 
 
-
+#S
+SPAWN_TIME = 5500
 
 #W
 
