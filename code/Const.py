@@ -1,8 +1,9 @@
 #C
 import pygame
 
-COLOR_BLACK= (0, 0, 0)
+COLOR_BLACK = (0, 0, 0)
 COLOR_WHITE = (255, 255, 255)
+COLOR_ORANGE = (255, 128, 0)
 
 #E
 EVENT_ENEMY = pygame.USEREVENT +1
@@ -30,12 +31,29 @@ ENTITY_HEALTH = {
                 'nature_1_7': 999,
                 'Enemy1Shot': 1,
                 'PlayerShot': 1,
-                'Player': 500,
-                'Enemy1': 100,
+                'Player': 100,
+                'Enemy1': 50,
 }
 
-ENTITY_SHOT_DELAY = {'Player':20,
+ENTITY_SHOT_DELAY = {'Player':15,
                      'Enemy1':130}
+
+
+ENTITY_DAMAGE =  {
+                'nature_1_0': 0,
+                'nature_1_1': 0,
+                'nature_1_2': 0,
+                'nature_1_3': 0,
+                'nature_1_4': 0,
+                'nature_1_5': 0,
+                'nature_1_6': 0,
+                'nature_1_7': 0,
+                'Enemy1Shot': 10,
+                'PlayerShot': 10,
+                'Player': 50,
+                'Enemy1': 50,
+}
+
 
 
 #H
