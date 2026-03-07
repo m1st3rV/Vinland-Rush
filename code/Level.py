@@ -63,5 +63,5 @@ class Level:
     def level_text(self, text_size: int, text: str, position: tuple, color: tuple):
         text_font: Font = pygame.font.SysFont('Times New Roman', size=text_size)
         text_surface: Surface = text_font.render(text, True, color=COLOR_WHITE).convert_alpha()
-        text_rect: Rect= text_surface.get_rect(left=position[0], top=position[0])
+        text_rect: Rect= text_surface.get_rect(left=position[0], top=position[1])
         self.window.blit(source=text_surface, dest=text_rect)
