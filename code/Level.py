@@ -43,7 +43,7 @@ class Level:
                     if shoot is not None:
                         self.entity_list.append(shoot)
                 if ent.name == 'Player':
-                    self.level_text(14, f'Player Health: {ent.health} | Score: {ent.score}', (50, 40), COLOR_WHITE)
+                    self.level_text(14, f'Player Health: {ent.health} | Score: {ent.score}', (20, 40), COLOR_RED)
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -53,7 +53,7 @@ class Level:
 
 
             self.level_text(14, f'{self.name} - Timeout: {self.timeout / 1000 :.1f}s', (10, 5), COLOR_WHITE,)
-            self.level_text(14, f'fps: {clock.get_fps()}',(25, WIN_HEIGHT - 5), COLOR_WHITE)
+            self.level_text(14, f'fps: {clock.get_fps()}',(250, 5), COLOR_WHITE)
 #            self.level_text(14, f'entidades: {len(self.entity_list)}' , (40, WIN_HEIGHT - 50),COLOR_WHITE )
             pygame.display.flip()
             EntityMediator.verify_collision(entity_list=self.entity_list)
@@ -62,6 +62,6 @@ class Level:
 
     def level_text(self, text_size: int, text: str, position: tuple, color: tuple):
         text_font: Font = pygame.font.SysFont('Times New Roman', size=text_size)
-        text_surface: Surface = text_font.render(text, True, color=COLOR_WHITE).convert_alpha()
+        text_surface: Surface = text_font.render(text, True, color=color).convert_alpha()
         text_rect: Rect= text_surface.get_rect(left=position[0], top=position[1])
         self.window.blit(source=text_surface, dest=text_rect)

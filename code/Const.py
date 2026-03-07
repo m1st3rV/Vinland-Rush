@@ -34,12 +34,12 @@ ENTITY_HEALTH = {
                 'nature_1_7': 999,
                 'Enemy1Shot': 1,
                 'PlayerShot': 1,
-                'Player': 100,
+                'Player': 200,
                 'Enemy1': 50,
 }
 
 ENTITY_SHOT_DELAY = {'Player':15,
-                     'Enemy1':130}
+                     'Enemy1':200}
 
 
 ENTITY_DAMAGE =  {
@@ -72,6 +72,15 @@ ENTITY_SCORE =  {
                 'Enemy1': 100,
 }
 
+
+#F
+
+#FISICA_PLAYER
+GRAVITY = 0.5
+JUMP_FORCE = -10
+
+
+
 #H
 
 
@@ -84,7 +93,7 @@ MENU_OPTION = ('NEW GAME','COMPETITIVE', 'COOPERATIVE', 'SCORE','EXIT')
 
 
 #S
-SPAWN_TIME = 5500
+SPAWN_TIME = 6500
 
 #W
 
