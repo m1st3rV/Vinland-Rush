@@ -25,8 +25,8 @@
 
 1. Clone ou baixe este repositório:
    ```bash
-   git clone https://github.com/m1st3rV/vinland-rush.git
-   cd vinland-rush
+   git clone https://github.com/m1st3rV/Vinland-Rush.git
+   cd Vinland-Rush
    ```
 
 2. Crie e ative um ambiente virtual (recomendado):
@@ -38,7 +38,7 @@
 
 3. Instale as dependências:
    ```bash
-   pip install pygame
+   pip install -r requirements.txt
    ```
 
 4. Rode o jogo:
