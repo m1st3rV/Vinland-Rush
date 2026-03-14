@@ -45,6 +45,9 @@
    ```bash
    python main.py
    ```
+### Ou execute diretamente pelo `.exe`
+
+Baixe o executável na seção [Releases](https://github.com/m1st3rV/Vinland-Rush/releases) e execute 'main.exe`.
 
 
 ---
