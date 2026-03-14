@@ -1,0 +1,5 @@
+setup.py
+Vinland_Rush.egg-info/PKG-INFO
+Vinland_Rush.egg-info/SOURCES.txt
+Vinland_Rush.egg-info/dependency_links.txt
+Vinland_Rush.egg-info/top_level.txt
